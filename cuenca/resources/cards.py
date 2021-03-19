@@ -33,6 +33,7 @@ class Card(Retrievable, Queryable, Creatable, Updateable):
     manufacturer: str
     cvv: str
     icvv: str
+    pin_block: Optional[str]
     pin_block_switch: Optional[str]
     pin_block_embosser: Optional[str]
 
