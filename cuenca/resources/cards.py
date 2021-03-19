@@ -29,6 +29,12 @@ class Card(Retrievable, Queryable, Creatable, Updateable):
     status: CardStatus
     issuer: CardIssuer
     funding_type: CardFundingType
+    batch: str
+    manufacturer: str
+    cvv: str
+    icvv: str
+    pin_block_switch: str
+    pin_block_embosser: str
 
     @property
     def last_4_digits(self):
