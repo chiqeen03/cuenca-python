@@ -33,8 +33,8 @@ class Card(Retrievable, Queryable, Creatable, Updateable):
     manufacturer: str
     cvv: str
     icvv: str
-    pin_block_switch: str
-    pin_block_embosser: str
+    pin_block_switch: Optional[str]
+    pin_block_embosser: Optional[str]
 
     @property
     def last_4_digits(self):
